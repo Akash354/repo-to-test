@@ -1,0 +1,6 @@
+ALB error
+ALB checks target health using port, protocol and ping path
+
+target health check failed with 404 -> verify and change the ping path
+target health check failed with 403 -> verify if application is up, target is listening on health check port, target supports one or more matching ciphers
+target health check failed with RTO -> verify if connection is there between ALB & EC2, check Outbound SG of ALB & inbound SG of EC2
